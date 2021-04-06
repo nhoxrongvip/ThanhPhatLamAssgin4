@@ -6,17 +6,15 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/ThanhFrag1"
-            android:title="Frag1" />
+            android:id="@+id/ThanhHomeFrag"
+            android:title="Home" />
         <item
-            android:id="@+id/ThanhFrag2"
-            android:title="Frag2" />
+            android:id="@+id/ThanhDownloadFrag"
+            android:title="Download" />
         <item
-            android:id="@+id/ThanhFrag3"
-            android:title="Frag3" />
-        <item
-            android:id="@+id/ThanhFrag4"
-            android:title="Frag4" />
+            android:id="@+id/ThanhWebServiceFrag"
+            android:title="Web Service" />
+
 
     </group>
 </menu>

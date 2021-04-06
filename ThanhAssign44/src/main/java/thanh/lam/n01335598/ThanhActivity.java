@@ -108,6 +108,9 @@ public class ThanhActivity extends AppCompatActivity implements NavigationView.O
             case R.id.ThanhWebServiceFrag:
                 frag = new WebServiceFrag();
                 break;
+            case R.id.ThanhSettingFrag:
+                frag = new SettingFrag();
+                break;
 
         }
         item.setChecked(true);

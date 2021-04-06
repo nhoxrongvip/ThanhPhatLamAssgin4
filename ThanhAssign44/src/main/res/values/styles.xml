@@ -11,4 +11,16 @@
         <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
 
+    <style name="tvFullName">
+        <item name="android:fontFamily">Verdana</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="tvStuNum">
+        <item name="android:fontFamily">Monospaced</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
 </resources>

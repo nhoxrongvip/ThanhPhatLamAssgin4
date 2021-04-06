@@ -15,6 +15,11 @@
             android:id="@+id/ThanhWebServiceFrag"
             android:title="Web Service" />
 
-
     </group>
+    <group>
+        <item
+            android:id="@+id/ThanhSettingFrag"
+            android:title="Setting" />
+
+    </group>>
 </menu>

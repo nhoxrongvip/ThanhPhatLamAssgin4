@@ -1,4 +1,6 @@
 <!--Thanh Phat Lam N01335598 CENG258 RNC-->
 <resources>
-    <string name="app_name">ThanhAssign4</string>
+    <string name="app_name">Thanh Phat Lam N01335598</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 </resources>

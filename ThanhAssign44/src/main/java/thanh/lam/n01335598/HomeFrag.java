@@ -18,7 +18,7 @@ import java.util.Date;
 
 public class HomeFrag extends Fragment {
     TextView currentDate;
-    TextClock currentHour;
+    public static TextClock currentHour;
 
 
     @Nullable
@@ -29,12 +29,11 @@ public class HomeFrag extends Fragment {
         //Get ID
         currentDate = (TextView) v.findViewById(R.id.ThanhTVCurrentDate);
         currentHour = (TextClock) v.findViewById(R.id.ThanhTCCurrentHour);
+
         //Set Current Date
-        String date = getCurrentDate();
-        currentDate.setText(date);
+        currentDate.setText(getCurrentDate());
 
         //Set current Time
-            //12-hour format
         currentHour.setFormat12Hour("hh:mm:ss a");
 
 

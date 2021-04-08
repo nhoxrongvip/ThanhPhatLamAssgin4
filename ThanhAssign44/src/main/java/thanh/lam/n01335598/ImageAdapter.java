@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import com.squareup.picasso.Picasso;
 
 public class ImageAdapter extends BaseAdapter {
+    int pos;
     Context context;
     String[] imgUrl;
     LayoutInflater inflater;
@@ -37,9 +38,13 @@ public class ImageAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
+        pos = position;
         convertView = inflater.inflate(R.layout.image_spinner,null);
         ImageView img = convertView.findViewById(R.id.ThanhImageView);
         Picasso.get().load(imgUrl[position]).into(img);
         return convertView;
+    }
+    public String getImageURL(String[] imgUrl){
+        return imgUrl[pos];
     }
 }

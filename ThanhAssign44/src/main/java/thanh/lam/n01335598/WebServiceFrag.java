@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -31,6 +32,8 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 import javax.net.ssl.HttpsURLConnection;
+
+import static com.google.android.gms.internal.zzahn.runOnUiThread;
 
 public class WebServiceFrag extends Fragment implements TextWatcher, View.OnClickListener {
     EditText zipcodeText;
@@ -140,8 +143,9 @@ public class WebServiceFrag extends Fragment implements TextWatcher, View.OnClic
                 sb.append(line);
             }
         } catch (IOException e) {
-            //If zip code doesnt match, display Dialog
-            webButton.setOnClickListener(v -> displayAlert("Invalid zip code"));
+            e.printStackTrace();
+
+
         }finally {
             urlConnection.disconnect();
         }
@@ -152,6 +156,7 @@ public class WebServiceFrag extends Fragment implements TextWatcher, View.OnClic
 
         @Override
         protected String doInBackground(String... urls) {
+
             return readJSON(urls[0]);
         }
 

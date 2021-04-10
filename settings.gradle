@@ -1,2 +1,3 @@
+include ':app'
 include ':ThanhAssign44'
 rootProject.name = "ThanhAssign4"

@@ -38,7 +38,7 @@ import com.google.android.material.navigation.NavigationView;
 
 
 public class ThanhActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
-    private static final int LOCATION_REQUEST_CODE = 1;
+
     private DrawerLayout drawer;
     Double longitude, latitude;
     FusedLocationProviderClient client;
@@ -76,6 +76,7 @@ public class ThanhActivity extends AppCompatActivity implements NavigationView.O
 
     @Override
     public void onBackPressed() {
+        //Close the opening drawer when back pressed
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
@@ -143,6 +144,8 @@ public class ThanhActivity extends AppCompatActivity implements NavigationView.O
 
                     ActivityCompat.requestPermissions(ThanhActivity.this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION}, 100);
                 }
+
+
                 return true;
             default:
                 super.onContextItemSelected(item);
@@ -152,11 +155,15 @@ public class ThanhActivity extends AppCompatActivity implements NavigationView.O
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         //Check condition
-        if(requestCode == 100 && grantResults.length > 0 && (grantResults[0] + grantResults[1]) == PackageManager.PERMISSION_GRANTED){
-            getCurrentLocation();
+        switch (requestCode){
+            case 100:
+                getCurrentLocation();
+                break;
+            case 200:
+                Toast.makeText(ThanhActivity.this,"Storage permission granted",Toast.LENGTH_SHORT).show();
+                break;
 
-        }else {
-            Toast.makeText(getApplicationContext(), "Permission Denied",Toast.LENGTH_SHORT).show();
+
         }
     }
 

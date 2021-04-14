@@ -128,7 +128,6 @@ public class WebServiceFrag extends Fragment implements TextWatcher, View.OnClic
             e.printStackTrace();
         }
 
-
         try {
             //Open URL
             urlConnection = (HttpsURLConnection) url.openConnection();
@@ -137,15 +136,15 @@ public class WebServiceFrag extends Fragment implements TextWatcher, View.OnClic
         }
         try {
             InputStream content = new BufferedInputStream(urlConnection.getInputStream());
+
             BufferedReader reader = new BufferedReader(new InputStreamReader(content));
             String line;
             while((line = reader.readLine()) != null){
                 sb.append(line);
             }
         } catch (IOException e) {
-            e.printStackTrace();
-
-
+            //Catch invalid zip code
+            getActivity().runOnUiThread(() -> displayAlert("Invalid zip code"));
         }finally {
             urlConnection.disconnect();
         }
@@ -182,11 +181,9 @@ public class WebServiceFrag extends Fragment implements TextWatcher, View.OnClic
                 strResult+="\nZip Code:" + zipcodeText.getText().toString();
                 weatherDisplay.setText(strResult);
 
-
-
-                //strResult+="\nzip:"+js.getString("zip");
             } catch (JSONException e) {
-                e.printStackTrace();
+                //Dialog appears when invalid zip code so doesnt need to printStackTrace here
+               // e.printStackTrace();
             }
         }
     }

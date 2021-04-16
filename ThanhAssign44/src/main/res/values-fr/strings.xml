@@ -3,4 +3,18 @@
     <string name="app_name">Thanh Phat Lam N01335598</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="download">Download</string>
+    <string name="thanh_phat_lam">Thanh Phat Lam</string>
+    <string name="n01335598">N01335598</string>
+    <string name="current_date">Current Date:</string>
+    <string name="current_hour">Current Hour:</string>
+    <string name="_12_hour_format">12-hour Format</string>
+    <string name="_24_hour_format">24-hour Format</string>
+    <string name="green">GREEN</string>
+    <string name="blue">BLUE</string>
+    <string name="black">BLACK</string>
+    <string name="save">Save</string>
+    <string name="thanh_phat_lam_webservice_frag">Thanh Phat Lam WebService Frag</string>
+    <string name="enter_zip_code">Enter ZIP code</string>
+    <string name="web_service">Web Service</string>
 </resources>

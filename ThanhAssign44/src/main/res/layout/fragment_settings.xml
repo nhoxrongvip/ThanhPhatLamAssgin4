@@ -27,14 +27,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="6"
-                android:text="12-hour Format" />
+                android:text="@string/_12_hour_format" />
 
             <RadioButton
                 android:id="@+id/ThanhFormat24h"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="24-hour Format" />
+                android:text="@string/_24_hour_format" />
         </RadioGroup>
     </LinearLayout>
 
@@ -59,21 +59,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
-                android:text="GREEN" />
+                android:text="@string/green" />
 
             <RadioButton
                 android:id="@+id/ThanhBackGroundBlue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
-                android:text="BLUE" />
+                android:text="@string/blue" />
 
             <RadioButton
                 android:id="@+id/ThanhBackGroundBlack"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
-                android:text="BLACK" />
+                android:text="@string/black" />
 
         </RadioGroup>
 
@@ -83,7 +83,7 @@
         android:id="@+id/ThanhSaveButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Save"
+        android:text="@string/save"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

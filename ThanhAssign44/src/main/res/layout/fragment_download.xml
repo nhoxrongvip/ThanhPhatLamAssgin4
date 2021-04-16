@@ -27,10 +27,11 @@
     </Spinner>
 
     <Button
+        style="@style/download"
         android:id="@+id/ThanhDownloadButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Download"
+        android:text="@string/download"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

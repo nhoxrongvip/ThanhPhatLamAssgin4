@@ -94,7 +94,7 @@
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="BackGround Color for Frag 1"
+        android:text="@string/background_color_for_frag_1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -106,7 +106,7 @@
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hour Format for Frag 1"
+        android:text="@string/hour_format_for_frag_1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.432"

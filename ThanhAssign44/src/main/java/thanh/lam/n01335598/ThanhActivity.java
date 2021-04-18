@@ -83,6 +83,7 @@ public class ThanhActivity extends AppCompatActivity implements NavigationView.O
             new AlertDialog.Builder(this)
                     .setTitle(R.string.app_name)
                     .setCancelable(false)
+                    .setIcon(R.drawable.warning)
                     .setMessage("Do you want to quit?")
                     .setPositiveButton("Yes", (dialog, which) -> finish())
                     .setNegativeButton("No", (dialog, which) -> dialog.cancel())
